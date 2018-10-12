@@ -26,11 +26,24 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btn {
-  padding: 20px;
-  background: blue;
-  border-radius: 5%;
+.hero-btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 37px;
+}
 
+.btn {
+  padding: 5px;
+}
+
+.quote{
+    background: blue;
+    border-radius: 15px;
+}
+
+.sample{
+    border: 2px solid blue;
+    border-radius: 15px;
 }
 
 /* skills */

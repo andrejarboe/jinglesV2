@@ -12,15 +12,21 @@ export default function IndexPage({ data }) {
       <section id="hero">
         <Img
           style={{
-            height: "45vh",
+            height: "45vh"
           }}
           fluid={data.hero1.childImageSharp.fluid}
         />
         <div className="hero-title container">
           <h1>Jingles</h1>
           <p>The best Jingles in your city!</p>
-          <Link to="/" className="btn quote">Request a quote</Link>
-          <Link to="/" className="btn sample">Samples</Link>
+          <div className="hero-btns">
+            <Link to="/" className="btn quote">
+              Request a quote
+            </Link>
+            <Link to="/" className="btn sample">
+              Samples
+            </Link>
+          </div>
         </div>
       </section>
 
