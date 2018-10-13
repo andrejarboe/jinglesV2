@@ -3,7 +3,27 @@
   --secondary: #fff;
 }
 
-footer{
+footer {
+
     background: var(--primary);
     color: var(--secondary);
+    padding: 20px 0;
+}
+
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 960px;
+
+}
+
+.site-map{
+    display: grid;
+    grid-gap: 5px;
+
 }
