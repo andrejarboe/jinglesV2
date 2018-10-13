@@ -9,7 +9,7 @@ import "../css/layout.css";
 const Layout = ({ children }) => (
   <div>
     <Helmet>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
     </Helmet>
