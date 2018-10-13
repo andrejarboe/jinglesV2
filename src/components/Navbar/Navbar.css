@@ -63,12 +63,14 @@ h1 {
   }
   
   .links {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: inherit;
     text-align: center;
     grid-gap: 12px;
-    margin: 0 45px;
+    margin: 0 45px; */
+
+    font-size: 15px;
   }
 }
 
