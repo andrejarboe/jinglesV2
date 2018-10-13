@@ -12,7 +12,7 @@ export default function IndexPage({ data }) {
       <section id="hero">
         <Img
           style={{
-            height: "45vh"
+            maxHeight: "400px"
           }}
           fluid={data.hero1.childImageSharp.fluid}
         />
