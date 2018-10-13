@@ -4,8 +4,12 @@ section {
 }
 
 h1 {
-    font-size: 8rem;
-  }
+  font-size: 8rem;
+}
+
+.title{
+    text-align: center;
+}
 
 /* Hero */
 #hero {
@@ -22,29 +26,29 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.hero-title p{
-    font-size: 2rem;
-    margin-bottom: 20px;
+.hero-title p {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.hero-btns{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 37px;
+.hero-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 37px;
 }
 
 .btn {
   padding: 5px;
 }
 
-.quote{
-    background: blue;
-    border-radius: 15px;
+.quote {
+  background: blue;
+  border-radius: 15px;
 }
 
-.sample{
-    border: 2px solid blue;
-    border-radius: 15px;
+.sample {
+  border: 2px solid blue;
+  border-radius: 15px;
 }
 
 /* skills */
@@ -75,15 +79,13 @@ h1 {
   grid-gap: 10px;
 }
 
-
 /* MEDIA */
 @media only screen and (max-width: 500px) {
-    h1 {
-        font-size: 6rem;
-      }
+  h1 {
+    font-size: 6rem;
+  }
 
-      .hero-title p{
-        font-size: 1.5rem;
-
-    }
+  .hero-title p {
+    font-size: 1.5rem;
+  }
 }
