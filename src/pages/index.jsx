@@ -75,19 +75,19 @@ export default function IndexPage({ data }) {
       {/* Whay us? */}
       <section id="whys">
         <div className="title container">
-          <h2>Why us?</h2>
+          <h1>Why us?</h1>
         </div>
         <div className="whys container">
           <div className="why">
-            <h3>80 million</h3>
+            <h2>80 million</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
           <div className="why">
-            <h3>80 million</h3>
+            <h2>Big name artist</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
           <div className="why">
-            <h3>80 million</h3>
+            <h2>80 million</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
         </div>

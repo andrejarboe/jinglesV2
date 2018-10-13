@@ -1,16 +1,14 @@
-/* html { font-size: 2vw; } */
+:root {
+    --primary: #000428;
+}
 section {
   padding: 20px 0;
 }
 
-h1 {
-  font-size: 8rem;
-}
-
-.title{
-    text-align: center;
-    padding: 20px 0;
-    text-transform: capitalize;
+.title {
+  text-align: center;
+  padding: 20px 0;
+  text-transform: capitalize;
 }
 
 /* Hero */
@@ -19,6 +17,10 @@ h1 {
   text-align: center;
   color: white;
   padding: 0;
+}
+
+#hero h1 {
+  font-size: 8rem;
 }
 
 .hero-title {
@@ -44,23 +46,23 @@ h1 {
 }
 
 .quote {
-  background: blue;
+  background: var(--primary);
   border-radius: 15px;
 }
 
 .sample {
-  border: 2px solid blue;
+  border: 2px solid var(--primary);
   border-radius: 15px;
 }
 
 /* talents */
 .jingles,
 .instrumentals,
-.voiceOver{
-    position: relative;
-    text-align: center;
-    padding: 0;
-    color: #fff;
+.voiceOver {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  color: #fff;
 }
 
 .talents {
@@ -70,18 +72,14 @@ h1 {
   grid-gap: 30px;
 }
 
-.talent h2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.talent h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Brands */
-#brands {
-  /* background: red; */
-}
-
 .brands {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -89,15 +87,14 @@ h1 {
   grid-gap: 10px;
 }
 
-.brand{
-    display: grid;
-    justify-content: center;
+.brand {
+  display: grid;
 }
 
-.brand svg{
-    margin: 0 auto;
-    font-size: 3.5rem;
-    color: #000428;
+.brand svg {
+  margin: 0 auto;
+  font-size: 3.5rem;
+  color: var(--primary);
 }
 
 /* Why us? */
@@ -108,45 +105,50 @@ h1 {
   grid-gap: 10px;
 }
 
+.why {
+  text-align: center;
+}
+
 /* MEDIA */
 @media only screen and (max-width: 500px) {
- 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    h1 {
-        font-size: 6rem;
-      }
-    
-      .hero-title p {
-        font-size: 1.5rem;
-      }
+    #hero h1 {
+    font-size: 6rem;
+  }
 
-      .brands {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: inherit;
-        grid-gap: 30px;
-        /* margin: 0 25px; */
-      }
+  .hero-title p {
+    font-size: 1.5rem;
+  }
+
+  .brands {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: inherit;
+    grid-gap: 30px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    .talents {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: inherit;
-        margin: 0 25px;
-      }
+  .talents {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: inherit;
+    margin: 0 25px;
+  }
 
+  .whys {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-
 }
