@@ -1,6 +1,6 @@
 :root {
-    --primary: #424242;
-    --secondary: #fff;
+  --primary: #424242;
+  --secondary: #fff;
 }
 section {
   padding: 20px 0;
@@ -20,7 +20,7 @@ section {
   padding: 0;
 }
 
-#hero span{
+#hero span {
   font-size: 8rem;
 }
 
@@ -81,15 +81,16 @@ section {
 }
 
 /* Brands */
-#brands{
-    background: var(--primary);
-    color: var(--secondary);
+#brands {
+  background: var(--primary);
+  color: var(--secondary);
 }
 .brands {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: inherit;
   grid-gap: 10px;
+  padding-bottom: 40px;
 }
 
 .brand {
@@ -120,7 +121,7 @@ section {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    #hero span {
+  #hero span {
     font-size: 6rem;
   }
 
@@ -132,6 +133,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: inherit;
     grid-gap: 30px;
+    padding-bottom: 20px;
   }
 }
 
