@@ -36,7 +36,7 @@ h1 {
 .hero-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 37px;
+  grid-gap: 9px;
 }
 
 .btn {
@@ -87,6 +87,14 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: inherit;
   grid-gap: 10px;
+}
+
+.work svg{
+    margin: 0 auto;
+    font-size: 3.5rem;
+    color: #000428;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Why us? */
