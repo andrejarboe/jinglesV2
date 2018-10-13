@@ -17,7 +17,7 @@ export default function IndexPage({ data }) {
           fluid={data.hero1.childImageSharp.fluid}
         />
         <div className="hero-title container">
-          <h1>Jingles</h1>
+          <span>Jingles</span>
           <p>The best Jingles in your city!</p>
           <div className="hero-btns">
             <Link to="/" className="btn quote">
@@ -84,10 +84,6 @@ export default function IndexPage({ data }) {
           </div>
           <div className="why">
             <h2>Big name artist</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-          </div>
-          <div className="why">
-            <h2>80 million</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
         </div>

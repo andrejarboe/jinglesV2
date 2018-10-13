@@ -1,5 +1,6 @@
 :root {
-    --primary: #000428;
+    --primary: #424242;
+    --secondary: #fff;
 }
 section {
   padding: 20px 0;
@@ -15,11 +16,11 @@ section {
 #hero {
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--secondary);
   padding: 0;
 }
 
-#hero h1 {
+#hero span{
   font-size: 8rem;
 }
 
@@ -62,7 +63,7 @@ section {
   position: relative;
   text-align: center;
   padding: 0;
-  color: #fff;
+  color: var(--secondary);
 }
 
 .talents {
@@ -80,6 +81,10 @@ section {
 }
 
 /* Brands */
+#brands{
+    background: var(--primary);
+    color: var(--secondary);
+}
 .brands {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -94,13 +99,13 @@ section {
 .brand svg {
   margin: 0 auto;
   font-size: 3.5rem;
-  color: var(--primary);
+  /* color: var(--secondary); */
 }
 
 /* Why us? */
 .whys {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: inherit;
   grid-gap: 10px;
 }
@@ -115,7 +120,7 @@ section {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    #hero h1 {
+    #hero span {
     font-size: 6rem;
   }
 
