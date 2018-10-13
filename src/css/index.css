@@ -1,10 +1,11 @@
+/* html { font-size: 2vw; } */
 section {
   padding: 20px 0;
 }
 
 h1 {
-  font-size: 8rem;
-}
+    font-size: 8rem;
+  }
 
 /* Hero */
 #hero {
@@ -58,6 +59,7 @@ h1 {
 #brands {
   background: red;
 }
+
 .brands {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -71,4 +73,17 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: inherit;
   grid-gap: 10px;
+}
+
+
+/* MEDIA */
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 6rem;
+      }
+
+      .hero-title p{
+        font-size: 1.5rem;
+
+    }
 }
