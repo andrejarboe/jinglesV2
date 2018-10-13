@@ -79,7 +79,7 @@ h1 {
 
 /* Brands */
 #brands {
-  background: red;
+  /* background: red; */
 }
 
 .brands {
@@ -89,12 +89,15 @@ h1 {
   grid-gap: 10px;
 }
 
-.work svg{
+.brand{
+    display: grid;
+    justify-content: center;
+}
+
+.brand svg{
     margin: 0 auto;
     font-size: 3.5rem;
-    color: #000428;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000428;
 }
 
 /* Why us? */
@@ -118,6 +121,13 @@ h1 {
     
       .hero-title p {
         font-size: 1.5rem;
+      }
+
+      .brands {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: inherit;
+        grid-gap: 30px;
+        /* margin: 0 25px; */
       }
 }
 
