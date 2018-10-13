@@ -1,0 +1,9 @@
+:root {
+  --primary: #424242;
+  --secondary: #fff;
+}
+
+footer{
+    background: var(--primary);
+    color: var(--secondary);
+}

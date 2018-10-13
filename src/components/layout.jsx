@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import Navbar from "./Navbar";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 import "../css/layout.css";
 
@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
         </div>
         <div className="main">{children}</div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div> 
 
   </div>
