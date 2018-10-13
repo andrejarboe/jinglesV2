@@ -9,6 +9,8 @@ h1 {
 
 .title{
     text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
 }
 
 /* Hero */
@@ -51,12 +53,28 @@ h1 {
   border-radius: 15px;
 }
 
-/* skills */
-.skills {
+/* talents */
+.jingles,
+.instrumentals,
+.voiceOver{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+
+.talents {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: inherit;
-  grid-gap: 10px;
+  grid-gap: 30px;
+}
+
+.talent h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Brands */
@@ -81,11 +99,36 @@ h1 {
 
 /* MEDIA */
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 6rem;
-  }
+ 
+}
 
-  .hero-title p {
-    font-size: 1.5rem;
-  }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 6rem;
+      }
+    
+      .hero-title p {
+        font-size: 1.5rem;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .talents {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: inherit;
+        margin: 0 25px;
+      }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
 }

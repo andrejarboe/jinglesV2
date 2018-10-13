@@ -30,21 +30,21 @@ export default function IndexPage({ data }) {
         </div>
       </section>
 
-      {/* Skills */}
-      <section id="skills">
+      {/* Talents */}
+      <section id="talents">
         <div className="title container">
-          <h2>What we do</h2>
+          <h2>Our Talents</h2>
         </div>
-        <div className="skills container">
-          <div className="skill jingles">
+        <div className="talents container">
+          <div className="talent jingles">
             <Img fluid={data.jingles.childImageSharp.fluid} />
             <h2>Jingles</h2>
           </div>
-          <div className="skill instrumentals">
+          <div className="talent instrumentals">
             <Img fluid={data.instrumentals.childImageSharp.fluid} />
             <h2>Instrumentals</h2>
           </div>
-          <div className="skill voiceOver">
+          <div className="talent voiceOver">
             <Img fluid={data.voiceOver.childImageSharp.fluid} />
             <h2>Voice Overs</h2>
           </div>
