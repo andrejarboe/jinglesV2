@@ -7,6 +7,9 @@ import "../css/contact.css";
 
 export default function ContactPage({ data }) {
 
+    // https://docs.google.com/forms/d/e/1FAIpQLSesA7HL5e2OSybPdhbjYKBao3sXyQ5tgGeOyyHxxqIGc_0rPw/viewform?usp=pp_url&entry.1718035081=Name&entry.130024216=Email&entry.1129070954=Subject&entry.969548444=Message
+
+    const action = "https://docs.google.com/forms/d/e/1FAIpQLSesA7HL5e2OSybPdhbjYKBao3sXyQ5tgGeOyyHxxqIGc_0rPw/formResponse?";
 
     const name = "entry.1718035081";
     const email = "entry.130024216";
@@ -43,7 +46,7 @@ export default function ContactPage({ data }) {
               <div className="info-item">
                 <p>
                   <i className="fas fa-clock" />
-                  hours
+                  Hours: 9-5 M-F, 10-3 S, Closed Sunday
                 </p>
               </div>
               <div className="info-item">
@@ -65,7 +68,11 @@ export default function ContactPage({ data }) {
 
           <div className="form">
             <h2>Request a quote</h2>
-            <form action="" method="post">
+
+            <form action={action} id="gForm" name="gForm" target="hidden_iframe" onsubmit="submitted=true;">
+
+
+
               <label htmlFor={name}>Name</label>
               <input type="text" name={name} id={name}/>
 
@@ -80,6 +87,9 @@ export default function ContactPage({ data }) {
 
               <input type="submit" value="submit"/>
             </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" onload="if(submitted){}"></iframe>
+
           </div>
         </div>
       </section>

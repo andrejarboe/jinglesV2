@@ -20,7 +20,7 @@ export default function IndexPage({ data }) {
           <span>Jingles</span>
           <p>The best Jingles in your city!</p>
           <div className="hero-btns">
-            <Link to="/" className="btn quote">
+            <Link to="/contact" className="btn quote">
               Request a quote
             </Link>
             <Link to="/" className="btn sample">
