@@ -1,0 +1,87 @@
+:root {
+  --primary: #424242;
+  --secondary: #fff;
+}
+
+
+
+/* Hero */
+#contact-hero {
+  position: relative;
+  text-align: center;
+  color: var(--secondary);
+  padding: 0;
+}
+
+#contact-hero span {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Contact */
+#Contact .container{
+    /* margin: 0 25px; */
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.info-items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.info-item svg{
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    #hero span {
+      font-size: 6rem;
+    }
+  
+    .hero-title p {
+      font-size: 1.5rem;
+    }
+  
+    .brands {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: inherit;
+      grid-gap: 30px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+        #Contact{
+            padding: 20px;
+        }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+  }
+  

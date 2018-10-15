@@ -45,3 +45,13 @@ a{
 img{
     width: 100%;
 }
+
+section {
+    padding: 20px 0;
+  }
+  
+  .title {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+  }
