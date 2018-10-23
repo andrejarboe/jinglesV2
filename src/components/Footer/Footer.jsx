@@ -16,9 +16,8 @@ export default class Footer extends Component {
           </div>
           <div className="site-map">
             <h3>Site Map</h3>
-            <Link to="/">Products</Link>
+            <Link to="/samples">Samples</Link>
             <Link to="/about">About</Link>
-            <Link to="/">FAQ</Link>
             <Link to="/contact">Request a quote</Link>
           </div>
           <div className="contact-footer">
