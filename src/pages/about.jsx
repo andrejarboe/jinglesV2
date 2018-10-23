@@ -1,30 +1,44 @@
 import React, { Component } from "react";
 import Layout from "../components/layout";
+import Img from "gatsby-image";
 
-export default class Form extends Component {
 
-  state = {
-    submitted: false,
-    action:
-      "https://docs.google.com/forms/d/e/1FAIpQLSesA7HL5e2OSybPdhbjYKBao3sXyQ5tgGeOyyHxxqIGc_0rPw/formResponse?",
+export default function AboutPage({ data }) {
+    return (
+      <Layout>
+        {/* Hero */}
+        <section id="contact-hero">
+          <Img
+            style={{
+              maxHeight: "150px"
+            }}
+            fluid={data.aboutHero.childImageSharp.fluid}
+          />
+          <div className="contact-title container">
+            <span>About Us</span>
+          </div>
+        </section>
 
-    name: "entry.1718035081",
-    email: "entry.130024216",
-    subject: "entry.1129070954",
-    message: "entry.969548444"
-  };
+        {/* About  */}
+        <section>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio eveniet, corrupti ex quos cupiditate laudantium facere laborum praesentium ipsa sint aperiam iure assumenda corporis rerum laboriosam? Qui, facilis enim.
+            </p>
+        </section>
 
-  handleFormSubmit() {
-    this.setState({
-      submitted: true
-    });
-  };
-  render() {
-      return(
-          <Layout>
-              about
-          </Layout>
-      );
-
-  }
+      </Layout>
+    );
+  
 }
+
+export const query = graphql`
+  query AboutPageQuery {
+    aboutHero: file(relativePath: { eq: "contactHero.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
