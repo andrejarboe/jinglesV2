@@ -8,19 +8,19 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="footer-container">
-          <div className="footer-logo">
+          <div className="m footer-logo">
             <Link to="/">
               <h2>Jingles</h2>
               <p>The best Jingles in your city!</p>
             </Link>
           </div>
-          <div className="site-map">
+          <div className="m site-map">
             <h3>Site Map</h3>
             <Link to="/samples">Samples</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Request a quote</Link>
           </div>
-          <div className="contact-footer">
+          <div className="m contact-footer">
             <Link to="/contact">
               <h3>Contact</h3>
               <p>contact@jingles.com</p>
