@@ -21,7 +21,7 @@ export default class Footer extends Component {
             <Link to="/">FAQ</Link>
             <Link to="/contact">Request a quote</Link>
           </div>
-          <div className="contact">
+          <div className="contact-footer">
             <Link to="/contact">
               <h3>Contact</h3>
               <p>contact@jingles.com</p>

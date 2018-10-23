@@ -25,6 +25,7 @@ footer .footer-container {
   grid-gap: 5px;
 }
 
+
 .copy-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,9 +41,6 @@ footer .footer-container {
     text-align: center;
   }
   
-  .copy-right{
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
